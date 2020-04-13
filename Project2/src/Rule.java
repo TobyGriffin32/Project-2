@@ -5,6 +5,7 @@ public abstract class Rule {
 	
 	protected Rule(int ruleNum) {
 		this.ruleNum = ruleNum;
+		//String ruleNumStr = Integer.toBinaryString(ruleNum);
 	}
 	
 	public int getRuleNum() {
