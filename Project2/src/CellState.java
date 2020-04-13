@@ -3,7 +3,7 @@ import java.util.Map;
 public enum CellState {
 	
 	OFF(';'), 
-	ON('0');
+	ON('O');
 	
 	private char symbol;
 	private static Map<Character, CellState> SYMBOL_TO_STATE;
@@ -19,5 +19,7 @@ public enum CellState {
 	public String toString() {
 		return "" + getState(symbol);
 	}
+	
+	
 
 }
