@@ -2,11 +2,15 @@ import java.util.Map;
 
 public enum CellState {
 	
-	OFF(';'), 
+	OFF('.'), 
 	ON('O');
 	
 	private char symbol;
 	private static Map<Character, CellState> SYMBOL_TO_STATE;
+	static {
+		SYMBOL_TO_STATE.put('.', CellState.OFF);
+		SYMBOL_TO_STATE.put('O', CellState.ON);
+	}
 	
 	private CellState(char symbol) {
 		this.symbol = symbol;
